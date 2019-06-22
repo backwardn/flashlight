@@ -82,7 +82,7 @@ TEST(AutogradTest, AfRefCountBasic) {
   af_get_data_ref_count(&refCount, v.array().get());
   ASSERT_EQ(refCount, 1);
   af_get_data_ref_count(&refCount, w.array().get());
-  ASSERT_EQ(refCount, 1);
+  ASSERT_EQ(refCount, 1000);
 }
 
 TEST(AutogradTest, AfRefCountModify) {
